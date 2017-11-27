@@ -16,6 +16,8 @@ import Checkbox from './components/forms/Checkbox'
 import Progress from './components/Progress'
 import ButtonGroup from './components/ButtonGroup'
 import Container from './components/Container'
+import Row from './components/Row'
+import Col from './components/Col'
 
 
 class App extends Component {
@@ -119,8 +121,29 @@ class App extends Component {
             </ButtonGroup>
           </div>
 
-        </Container>
+          <div className='mt-3'>
+            <h1>Container</h1>
+            <Container variation='fluid'>
+              <h2>Row 1</h2>
+              <Row>
+                <Col size='md' span='4' options='bg-success'><h3>Col 1 of 3</h3></Col>
+                <Col size='md' span='4' options='bg-warning'><h3>Col 2 of 3</h3></Col>
+                <Col size='md' span='4' options='bg-danger'><h3>Col 3 of 3</h3></Col>
+              </Row>
 
+              <h2>Row 2</h2>
+              <Row>
+                <Col size='md' span='6' options='bg-primary'><h3>Col 1 of 2</h3></Col>
+                <Col size='md' span='6' options='bg-secondary'><h3>Col 2 of 2</h3></Col>
+              </Row>
+
+              <h2>Row 3</h2>
+              <Row>
+                <Col size='md' span='12' options='bg-info'><h3>Col 1 of 1</h3></Col>
+              </Row>
+            </Container>
+          </div>
+        </Container>
       </div>
       
     );

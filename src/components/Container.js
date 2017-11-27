@@ -2,7 +2,7 @@ import React from 'react'
 
 const Container = ({ children, variation }) => {
   let className = 'container'
-  if (variation) {
+  if (!!variation) {
     className += `-${variation}`
   }
   return (
