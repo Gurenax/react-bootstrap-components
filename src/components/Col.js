@@ -18,7 +18,7 @@ const Col = ({ children, size, span, options }) => {
     className += ` ${options}`
   }
   return (
-    <div class={ className }>
+    <div className={ className }>
       {children}
     </div>
   )

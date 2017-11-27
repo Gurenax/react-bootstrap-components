@@ -11,7 +11,7 @@ const Row = ({ children, options }) => {
     className += ` ${options}`
   }
   return (
-    <div class={ className }>
+    <div className={ className }>
       {children}
     </div>
   )

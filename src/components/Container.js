@@ -9,7 +9,7 @@ const Container = ({ children, variation, options }) => {
     className += ` ${options}`
   }
   return (
-    <div class={ className }>
+    <div className={ className }>
       {children}
     </div>
   )

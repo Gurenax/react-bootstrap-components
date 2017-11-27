@@ -3,7 +3,7 @@ import React from 'react'
 const FormGroup = ({ children, type='group' }) => {
   let formGroupType = `form-${type}`
   return (
-    <div class={formGroupType}>
+    <div className={formGroupType}>
       { children }
     </div>
   )

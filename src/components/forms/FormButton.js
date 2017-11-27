@@ -7,7 +7,7 @@ const FormButton = ({ type='submit', children='Submit', variation='primary' }) =
   }
 
   return (
-    <button type={ type } class={className}>{ children }</button>
+    <button type={ type } className={className}>{ children }</button>
   )
 }
 

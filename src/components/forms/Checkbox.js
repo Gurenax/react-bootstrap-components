@@ -6,12 +6,19 @@ import React from 'react'
 *  description - text beside checkbox
 *  checked - if the checkbox is ticked
 */
-const Checkbox = ({ id, description, checked }) => ( 
-  <label class="custom-control custom-checkbox">
-    <input id={ id } name={ id } type="checkbox" class="custom-control-input" defaultChecked={ checked } />
-    <span class="custom-control-indicator"></span>
-    <span class="custom-control-description">{ description }</span>
-  </label>
-)
+const Checkbox = ({ id, description, checked, disabled=false }) => {
+  let className = 'form-check'
+  if (!!disabled) {
+    className += ' disabled'
+  }
+  return (
+    <div className={className}>
+      <label className="form-check-label" >
+        <input className="form-check-input" id={ id } name={ id } type="checkbox" defaultChecked={ checked } disabled={ disabled } />
+        { description }
+      </label>
+    </div>
+  )
+}
 
 export default Checkbox

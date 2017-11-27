@@ -15,8 +15,8 @@ const Progress = ({ value, striped, animated, color }) => {
   }
 
   return ( 
-    <div class="progress">
-      <div class={ className } role="progressbar" style={{width: percent}} aria-valuenow={value} aria-valuemin={value} aria-valuemax="100">
+    <div className="progress">
+      <div className={ className } role="progressbar" style={{width: percent}} aria-valuenow={value} aria-valuemin={value} aria-valuemax="100">
         {percent}
       </div>
     </div>

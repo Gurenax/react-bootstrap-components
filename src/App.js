@@ -88,11 +88,13 @@ class App extends Component {
               <FormGroup type='check'>
                 <Checkbox id='checkMe' description='Checked by default' checked />
                 <Checkbox id='checkMe2' description='Not checked by default' />
+                <Checkbox id='checkMe2' description='Disabled by default' disabled />
               </FormGroup>
 
               <FormGroup>
-                <RadioButton id='radio1' group='radio' description='Radio 1' selected />
-                <RadioButton id='radio2' group='radio' description='Radio 2' />
+                <RadioButton id='radio1' group='radio' value='option1' description='Radio 1' selected />
+                <RadioButton id='radio2' group='radio' value='option2' description='Radio 2' />
+                <RadioButton id='radio3' group='radio' value='option3' description='Radio 3' disabled />
               </FormGroup>
 
               <FormGroup>
