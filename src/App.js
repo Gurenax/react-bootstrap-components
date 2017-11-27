@@ -59,13 +59,13 @@ class App extends Component {
             <Container>
               <Row>
                 <Col>
-                  <Card image='http://cdn.akc.org/content/hero/puppy-boundaries_header.jpg' imageAlt='Random Dog 1' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
+                  <Card imageUrl='http://cdn.akc.org/content/hero/puppy-boundaries_header.jpg' imageAlt='Random Dog 1' title='This is a Card' text='Hello World!' buttonUrl='http://www.google.com' buttonText='Go to Google' />
                 </Col>
                 <Col>
-                  <Card image='http://www.haustier-news.de/wp-content/uploads/2015/04/chihuahua-darum-ist-er-der-beliebteste-kleinhund-der-welt.jpg' imageAlt='Random Dog 2' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
+                  <Card imageUrl='http://www.haustier-news.de/wp-content/uploads/2015/04/chihuahua-darum-ist-er-der-beliebteste-kleinhund-der-welt.jpg' imageAlt='Random Dog 2' title='This is a Card' text='Hello World!' buttonUrl='http://www.google.com' buttonText='Go to Google' buttonColor='danger' />
                 </Col>
                 <Col>
-                  <Card image='https://i.ytimg.com/vi/opKg3fyqWt4/hqdefault.jpg' imageAlt='Random Dog 3' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
+                  <Card imageUrl='https://i.ytimg.com/vi/opKg3fyqWt4/hqdefault.jpg' imageAlt='Random Dog 3' title='This is a Card' text='Hello World!' buttonUrl='http://www.google.com' buttonText='Go to Google' buttonColor='success' />
                 </Col>
               </Row>
             </Container>
