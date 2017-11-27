@@ -7,9 +7,7 @@ import React from 'react'
 */
 const Row = ({ children, options }) => {
   let className = 'row'
-  if (!!options) {
-    className += ` ${options}`
-  }
+  if (!!options) className += ` ${options}`
   return (
     <div className={ className }>
       {children}

@@ -9,15 +9,9 @@ import React from 'react'
 */
 const Col = ({ children, size, span, options }) => {
   let className = 'col'
-  if (!!size) {
-    className += `-${size}`
-  }
-  if (!!span) {
-    className += `-${span}`
-  }
-  if (!!options) {
-    className += ` ${options}`
-  }
+  if (!!size) className += `-${size}`
+  if (!!span) className += `-${span}`
+  if (!!options) className += ` ${options}`
   return (
     <div className={ className }>
       {children}
