@@ -13,6 +13,7 @@ import TextField from './components/forms/TextField'
 import FormButton from './components/forms/FormButton'
 import TextArea from './components/forms/TextArea'
 import Checkbox from './components/forms/Checkbox'
+import Progress from './components/Progress'
 
 class App extends Component {
   render() {
@@ -80,6 +81,21 @@ class App extends Component {
             <FormButton type='reset'>Clear</FormButton>
           </Form>
         </div>
+
+        <div className='mt-3'>
+          <Progress value='0' />
+          <br/>
+          <Progress value='10' />
+          <br/>
+          <Progress value='25' />
+          <br/>
+          <Progress value='50' />
+          <br/>
+          <Progress value='75' />
+          <br/>
+          <Progress value='100' />
+        </div>
+
       </div>
       
     );
