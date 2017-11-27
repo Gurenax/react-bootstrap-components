@@ -14,24 +14,30 @@ import FormButton from './components/forms/FormButton'
 import TextArea from './components/forms/TextArea'
 import Checkbox from './components/forms/Checkbox'
 import Progress from './components/Progress'
+import ButtonGroup from './components/ButtonGroup'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className='mt-3'>
+          <h1>Buttons</h1>
           <Button title='Google' href='https://www.google.com/' />
           <Button title='Second' variation='primary' />
           <Button title='Third' variation='success' />
         </div>
+
         <div className='mt-3'>
+          <h1>Nav</h1>
           <Nav>
             <NavItem>First</NavItem>
             <NavItem active={ true }>Second</NavItem>
             <NavItem>Third</NavItem>
           </Nav>
         </div>
+
         <div className='mt-3'>
+          <h1>Alert</h1>
           <Alert type='primary'>This is a primary alert—check it out!</Alert>
           <Alert type='secondary'>This is a secondary alert—check it out!</Alert>
           <Alert type='success'>This is a success alert—check it out!</Alert>
@@ -43,10 +49,12 @@ class App extends Component {
         </div>
 
         <div className='mt-3'>
+          <h1>Card</h1>
           <Card image='http://cdn.akc.org/content/hero/puppy-boundaries_header.jpg' imageAlt='Random Dog' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
         </div>
 
         <div className='mt-3'>
+          <h1>Forms and Fields</h1>
           <Form>
             <FormGroup>
               <Label forId='textName'>Name</Label>
@@ -77,12 +85,15 @@ class App extends Component {
               <TextArea id='textArea' rows='5' placeholder='Enter description' />
             </FormGroup>
 
-            <FormButton type='submit'>Submit</FormButton>
-            <FormButton type='reset'>Clear</FormButton>
+            <ButtonGroup>
+              <FormButton type='submit'>Submit</FormButton>
+              <FormButton type='reset'>Clear</FormButton>
+            </ButtonGroup>
           </Form>
         </div>
 
         <div className='mt-3'>
+          <h1>Progress</h1>
           <Progress value='0' />
           <br/>
           <Progress value='10' />
@@ -94,6 +105,15 @@ class App extends Component {
           <Progress value='75' />
           <br/>
           <Progress value='100' />
+        </div>
+
+        <div className='mt-3'>
+          <h1>Button Group</h1>
+          <ButtonGroup>
+            <Button title='First' href='https://www.google.com/' />
+            <Button title='Second' variation='primary' />
+            <Button title='Third' variation='success' />
+          </ButtonGroup>
         </div>
 
       </div>
