@@ -7,7 +7,7 @@ const Label = ({ forId, children, type='text' }) => {
   }
 
   return ( 
-  <label className={ className } for={ forId }>{ children }</label>
+    <label className={ className } for={ forId }>{ children }</label>
   )
 }
 
