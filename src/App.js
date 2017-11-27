@@ -6,6 +6,13 @@ import Button from './components/Button'
 import { Nav, NavItem } from './components/Nav'
 import Alert from './components/Alert'
 import Card from './components/Card'
+import Form from './components/forms/Form'
+import FormGroup from './components/forms/FormGroup'
+import Label from './components/forms/Label'
+import TextField from './components/forms/TextField'
+import FormButton from './components/forms/FormButton'
+import TextArea from './components/forms/TextArea'
+import Checkbox from './components/forms/Checkbox'
 
 class App extends Component {
   render() {
@@ -38,6 +45,41 @@ class App extends Component {
           <Card image='http://cdn.akc.org/content/hero/puppy-boundaries_header.jpg' imageAlt='Random Dog' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
         </div>
 
+        <div className='mt-3'>
+          <Form>
+            <FormGroup>
+              <Label forId='textName'>Name</Label>
+              <TextField id='textName' type='text' placeholder='Enter a name' />
+            
+              <Label forId='textEmail'>Email</Label>
+              <TextField id='textEmail' type='email' placeholder='Enter an email address' />
+            
+              <Label forId='textPassword'>Password</Label>
+              <TextField id='textPassword' type='password' placeholder='Enter a password' />
+            </FormGroup>
+
+            <FormGroup type='check'>
+              <Label forId='checkMe' type='checkbox'>
+                <Checkbox id='checkMe' checked />
+                Checked by default
+              </Label>
+            </FormGroup>
+            <FormGroup type='check'>
+              <Label forId='checkMe2' type='checkbox'>
+                <Checkbox id='checkMe2' />
+                Not checked by default
+              </Label>
+            </FormGroup>
+
+            <FormGroup>
+              <Label forId='textArea'>Description</Label>
+              <TextArea id='textArea' rows='5' placeholder='Enter description' />
+            </FormGroup>
+
+            <FormButton type='submit'>Submit</FormButton>
+            <FormButton type='reset'>Clear</FormButton>
+          </Form>
+        </div>
       </div>
       
     );
