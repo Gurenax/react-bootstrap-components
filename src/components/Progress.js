@@ -1,20 +1,17 @@
 import React from 'react'
 
-const Progress = ({ value }) => {
+const Progress = ({ value, striped, animated, color }) => {
   let percent = value+'%'
-  let className = 'progress-bar progress-bar-striped'
+  let className = 'progress-bar'
 
-  if ( value >= 100 ) {
-    className += ' bg-danger'
+  if (!!striped) {
+    className += ' progress-bar-striped'
   }
-  else if ( value >= 75 ) {
-    className += ' bg-warning'
+  if (!!animated) {
+    className += ' progress-bar-animated'
   }
-  else if ( value >= 50 ) {
-    className += ' bg-info'
-  }
-  else if ( value >= 25 ) {
-    className += ' bg-success'
+  if (!!color) {
+    className += ` bg-${color}`
   }
 
   return ( 

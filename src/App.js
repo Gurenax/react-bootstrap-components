@@ -109,17 +109,17 @@ class App extends Component {
 
           <div className='mt-3'>
             <h1>Progress</h1>
-            <Progress value='0' />
+            <Progress value='0' striped animated/>
             <br/>
-            <Progress value='10' />
+            <Progress value='10' striped animated />
             <br/>
-            <Progress value='25' />
+            <Progress value='25' striped animated color='success'/>
             <br/>
-            <Progress value='50' />
+            <Progress value='50' striped animated color='info' />
             <br/>
-            <Progress value='75' />
+            <Progress value='75' striped animated color='warning' />
             <br/>
-            <Progress value='100' />
+            <Progress value='100' striped animated color='danger' />
           </div>
 
           <div className='mt-3'>
