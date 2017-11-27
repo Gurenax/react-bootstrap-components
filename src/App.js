@@ -92,9 +92,9 @@ class App extends Component {
               </FormGroup>
 
               <FormGroup>
-                <RadioButton id='radio1' group='radio' value='option1' description='Radio 1' selected />
-                <RadioButton id='radio2' group='radio' value='option2' description='Radio 2' />
-                <RadioButton id='radio3' group='radio' value='option3' description='Radio 3' disabled />
+                <RadioButton id='radio1' group='radioGrp1' value='option1' description='Radio 1' selected />
+                <RadioButton id='radio2' group='radioGrp1' value='option2' description='Radio 2' />
+                <RadioButton id='radio3' group='radioGrp1' value='option3' description='Radio 3' disabled />
               </FormGroup>
 
               <FormGroup type='check'>
@@ -104,9 +104,9 @@ class App extends Component {
               </FormGroup>
 
               <FormGroup>
-                <RadioButton id='inlineRadio1' group='radio' value='option1' description='Radio 1' inline selected />
-                <RadioButton id='inlineRadio2' group='radio' value='option2' description='Radio 2' inline />
-                <RadioButton id='inlineRadio3' group='radio' value='option3' description='Radio 3' inline disabled />
+                <RadioButton id='inlineRadio1' group='radioGrp2' value='option1' description='Radio 1' inline selected />
+                <RadioButton id='inlineRadio2' group='radioGrp2' value='option2' description='Radio 2' inline />
+                <RadioButton id='inlineRadio3' group='radioGrp2' value='option3' description='Radio 3' inline disabled />
               </FormGroup>
 
               <FormGroup>
