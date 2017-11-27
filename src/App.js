@@ -55,7 +55,19 @@ class App extends Component {
 
           <div className='mt-3'>
             <h1>Card</h1>
-            <Card image='http://cdn.akc.org/content/hero/puppy-boundaries_header.jpg' imageAlt='Random Dog' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
+            <Container>
+              <Row>
+                <Col>
+                  <Card image='http://cdn.akc.org/content/hero/puppy-boundaries_header.jpg' imageAlt='Random Dog 1' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
+                </Col>
+                <Col>
+                  <Card image='http://www.haustier-news.de/wp-content/uploads/2015/04/chihuahua-darum-ist-er-der-beliebteste-kleinhund-der-welt.jpg' imageAlt='Random Dog 2' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
+                </Col>
+                <Col>
+                  <Card image='https://i.ytimg.com/vi/opKg3fyqWt4/hqdefault.jpg' imageAlt='Random Dog 3' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
+                </Col>
+              </Row>
+            </Container>
           </div>
 
           <div className='mt-3'>
@@ -122,8 +134,31 @@ class App extends Component {
           </div>
 
           <div className='mt-3'>
-            <h1>Container</h1>
-            <Container variation='fluid'>
+            <h1>Container Fluid</h1>
+            <Container variation='fluid' options='bg-light'>
+              <h2>Row 1</h2>
+              <Row>
+                <Col size='md' span='4' options='bg-success'><h3>Col 1 of 3</h3></Col>
+                <Col size='md' span='4' options='bg-warning'><h3>Col 2 of 3</h3></Col>
+                <Col size='md' span='4' options='bg-danger'><h3>Col 3 of 3</h3></Col>
+              </Row>
+
+              <h2>Row 2</h2>
+              <Row>
+                <Col size='md' span='6' options='bg-primary'><h3>Col 1 of 2</h3></Col>
+                <Col size='md' span='6' options='bg-secondary'><h3>Col 2 of 2</h3></Col>
+              </Row>
+
+              <h2>Row 3</h2>
+              <Row>
+                <Col size='md' span='12' options='bg-info'><h3>Col 1 of 1</h3></Col>
+              </Row>
+            </Container>
+          </div>
+
+          <div className='mt-3'>
+            <h1>Container Default</h1>
+            <Container options='bg-dark text-light'>
               <h2>Row 1</h2>
               <Row>
                 <Col size='md' span='4' options='bg-success'><h3>Col 1 of 3</h3></Col>
