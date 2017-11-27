@@ -16,9 +16,9 @@ import Checkbox from './components/forms/Checkbox'
 import RadioButton from './components/forms/RadioButton'
 import Progress from './components/Progress'
 import ButtonGroup from './components/ButtonGroup'
-import Container from './components/Container'
-import Row from './components/Row'
-import Col from './components/Col'
+import Container from './components/grid/Container'
+import Row from './components/grid/Row'
+import Col from './components/grid/Col'
 
 
 class App extends Component {
