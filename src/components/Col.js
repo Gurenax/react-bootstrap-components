@@ -5,6 +5,7 @@ import React from 'react'
 *   children - components inside the Row component
 *   size - size of screen (i.e. sm, md, lg, xl)
 *   span - column span
+*   options - optional classes
 */
 const Col = ({ children, size, span, options }) => {
   let className = 'col'
