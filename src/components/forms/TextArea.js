@@ -6,8 +6,8 @@ import React from 'react'
 *  rows - number of rows
 *  placeholder - placeholder description
 */
-const TextArea = ({ id, rows='3', placeholder }) => ( 
-  <textarea className="form-control" id={ id } rows={ rows } placeholder={ placeholder }></textarea>
+const TextArea = ({ id, rows='3', placeholder, value }) => ( 
+  <textarea className="form-control" id={ id } rows={ rows } placeholder={ placeholder }>{ value }</textarea>
 )
 
 export default TextArea

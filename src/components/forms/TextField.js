@@ -6,8 +6,8 @@ import React from 'react'
 *  type - text, email, password
 *  placeholder - placeholder description
 */
-const TextField = ({ id, type, placeholder }) => ( 
-  <input type={ type } id={ id } placeholder={ placeholder } className='form-control' />
+const TextField = ({ id, type, placeholder, value }) => ( 
+  <input type={ type } id={ id } placeholder={ placeholder } className='form-control' value={ value } />
 )
 
 export default TextField
