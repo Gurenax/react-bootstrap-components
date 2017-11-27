@@ -97,6 +97,18 @@ class App extends Component {
                 <RadioButton id='radio3' group='radio' value='option3' description='Radio 3' disabled />
               </FormGroup>
 
+              <FormGroup type='check'>
+                <Checkbox id='inlineCheck1' description='Checked by default' inline checked />
+                <Checkbox id='inlineCheck2' description='Not checked by default' inline />
+                <Checkbox id='inlineCheck3' description='Disabled by default' inline disabled />
+              </FormGroup>
+
+              <FormGroup>
+                <RadioButton id='inlineRadio1' group='radio' value='option1' description='Radio 1' inline selected />
+                <RadioButton id='inlineRadio2' group='radio' value='option2' description='Radio 2' inline />
+                <RadioButton id='inlineRadio3' group='radio' value='option3' description='Radio 3' inline disabled />
+              </FormGroup>
+
               <FormGroup>
                 <Label forId='textArea'>Description</Label>
                 <TextArea id='textArea' rows='5' placeholder='Enter description' />

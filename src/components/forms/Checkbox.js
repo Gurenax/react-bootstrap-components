@@ -6,8 +6,11 @@ import React from 'react'
 *  description - text beside checkbox
 *  checked - if the checkbox is ticked
 */
-const Checkbox = ({ id, description, checked, disabled=false }) => {
+const Checkbox = ({ id, description, checked, inline=false, disabled=false }) => {
   let className = 'form-check'
+  if (!!inline) {
+    className += ' form-check-inline'
+  }
   if (!!disabled) {
     className += ' disabled'
   }

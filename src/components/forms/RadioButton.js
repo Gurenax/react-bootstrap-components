@@ -8,8 +8,11 @@ import React from 'react'
 *   description - text beside radio button
 *   selected - determines if radio button is selected by default
 */
-const RadioButton = ({ id, group, value, description, selected, disabled }) =>  {
+const RadioButton = ({ id, group, value, description, selected, inline=false, disabled=false }) =>  {
   let className = 'form-check'
+  if (!!inline) {
+    className += ' form-check-inline'
+  }
   if (!!disabled) {
     className += ' disabled'
   }
