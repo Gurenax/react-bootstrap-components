@@ -13,6 +13,7 @@ import TextField from './components/forms/TextField'
 import FormButton from './components/forms/FormButton'
 import TextArea from './components/forms/TextArea'
 import Checkbox from './components/forms/Checkbox'
+import RadioButton from './components/forms/RadioButton'
 import Progress from './components/Progress'
 import ButtonGroup from './components/ButtonGroup'
 import Container from './components/Container'
@@ -85,16 +86,13 @@ class App extends Component {
               </FormGroup>
 
               <FormGroup type='check'>
-                <Label forId='checkMe' type='checkbox'>
-                  <Checkbox id='checkMe' checked />
-                  Checked by default
-                </Label>
+                <Checkbox id='checkMe' description='Checked by default' checked />
+                <Checkbox id='checkMe2' description='Not checked by default' />
               </FormGroup>
-              <FormGroup type='check'>
-                <Label forId='checkMe2' type='checkbox'>
-                  <Checkbox id='checkMe2' />
-                  Not checked by default
-                </Label>
+
+              <FormGroup>
+                <RadioButton id='radio1' group='radio' description='Radio 1' selected />
+                <RadioButton id='radio2' group='radio' description='Radio 2' />
               </FormGroup>
 
               <FormGroup>
