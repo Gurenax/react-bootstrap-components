@@ -75,17 +75,17 @@ class App extends Component {
             <h1>Forms and Fields</h1>
             <Form>
               <FormGroup>
-                <Label forId='textName'>Name</Label>
+                <Label forId='textName' title='Name' />
                 <TextField id='textName' type='text' placeholder='Enter a name' />
               
-                <Label forId='textEmail'>Email</Label>
+                <Label forId='textEmail' title='Email' />
                 <TextField id='textEmail' type='email' placeholder='Enter an email address' />
               
-                <Label forId='textPassword'>Password</Label>
+                <Label forId='textPassword' title='Password' />
                 <TextField id='textPassword' type='password' placeholder='Enter a password' />
               </FormGroup>
 
-              <FormGroup type='check'>
+              <FormGroup>
                 <Checkbox id='checkMe' description='Checked by default' checked />
                 <Checkbox id='checkMe2' description='Not checked by default' />
                 <Checkbox id='checkMe2' description='Disabled by default' disabled />
@@ -97,7 +97,7 @@ class App extends Component {
                 <RadioButton id='radio3' group='radioGrp1' value='option3' description='Radio 3' disabled />
               </FormGroup>
 
-              <FormGroup type='check'>
+              <FormGroup>
                 <Checkbox id='inlineCheck1' description='Checked by default' inline checked />
                 <Checkbox id='inlineCheck2' description='Not checked by default' inline />
                 <Checkbox id='inlineCheck3' description='Disabled by default' inline disabled />
@@ -110,13 +110,13 @@ class App extends Component {
               </FormGroup>
 
               <FormGroup>
-                <Label forId='textArea'>Description</Label>
-                <TextArea id='textArea' rows='5' placeholder='Enter description' />
+                <Label forId='textArea' title='Description' />
+                <TextArea id='textArea' rows='5' placeholder='Enter description' value='' />
               </FormGroup>
 
               <ButtonGroup>
-                <FormButton type='submit'>Submit</FormButton>
-                <FormButton type='reset'>Clear</FormButton>
+                <FormButton type='submit' title='Submit' />
+                <FormButton type='reset' title='Clear' />
               </ButtonGroup>
             </Form>
           </div>
