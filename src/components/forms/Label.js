@@ -5,8 +5,8 @@ import React from 'react'
 *   forId - id of target component to be labeled
 *   children - any component under label (e.g. text for label)
 */
-const Label = ({ forId, children }) => ( 
-  <label for={ forId }>{ children }</label>
+const Label = ({ forId, title }) => ( 
+  <label for={ forId }>{ title }</label>
 )
 
 export default Label
