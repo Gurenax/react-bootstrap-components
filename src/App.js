@@ -5,6 +5,7 @@ import './bootstrap-4.0.0-beta.2-dist/css/bootstrap.css'
 import Button from './components/Button'
 import { Nav, NavItem } from './components/Nav'
 import Alert from './components/Alert'
+import Card from './components/Card'
 
 class App extends Component {
   render() {
@@ -32,7 +33,13 @@ class App extends Component {
           <Alert type='light'>This is a light alert—check it out!</Alert>
           <Alert type='dark'>This is a dark alert—check it out!</Alert>
         </div>
+
+        <div className='mt-3'>
+          <Card image='http://cdn.akc.org/content/hero/puppy-boundaries_header.jpg' imageAlt='Random Dog' title='This is a Card' text='Hello World!' buttonLink='http://www.google.com' buttonText='Go to Google' />
+        </div>
+
       </div>
+      
     );
   }
 }
