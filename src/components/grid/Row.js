@@ -3,13 +3,13 @@ import React from 'react'
 /*
 *   Row component
 *   children - components inside the Row component
-*   options - optional classes
+*   className - optional classes
 */
-const Row = ({ children, options }) => {
-  let className = 'row'
-  if (!!options) className += ` ${options}`
+const Row = ({ children, className }) => {
+  let classes = 'row'
+  if (!!className) classes += ` ${className}`
   return (
-    <div className={ className }>
+    <div className={ classes }>
       {children}
     </div>
   )

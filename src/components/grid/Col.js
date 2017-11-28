@@ -5,15 +5,15 @@ import React from 'react'
 *   children - components inside the Row component
 *   size - size of screen (i.e. sm, md, lg, xl)
 *   span - column span
-*   options - optional classes
+*   className - optional classes
 */
-const Col = ({ children, size, span, options }) => {
-  let className = 'col'
-  if (!!size) className += `-${size}`
-  if (!!span) className += `-${span}`
-  if (!!options) className += ` ${options}`
+const Col = ({ children, size, span, className }) => {
+  let classes = 'col'
+  if (!!size) classes += `-${size}`
+  if (!!span) classes += `-${span}`
+  if (!!className) classes += ` ${className}`
   return (
-    <div className={ className }>
+    <div className={ classes }>
       {children}
     </div>
   )

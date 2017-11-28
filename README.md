@@ -2,25 +2,26 @@
 
 ## Components
 
-### Container
+### Grid
+- Container
 ```html
 <Container></Container>
-<Container options='bg-light'></Container>
-<Container variation='fluid' options='bg-light'></Container>
+<Container className='bg-light'></Container>
+<Container variation='fluid' className='bg-light'></Container>
 ```
 
-### Row
+- Row
 ```html
 <Row></Row>
-<Row options='bg-info'></Row>
+<Row className='bg-info'></Row>
 ```
 
-### Col
+- Col
 ```html
 <Col></Col>
 <Col size='md'></Col>
 <Col size='md' span='4'></Col>
-<Col size='md' span='4' options='bg-light'></Col>
+<Col size='md' span='4' className='bg-light'></Col>
 ```
 
 ### Button

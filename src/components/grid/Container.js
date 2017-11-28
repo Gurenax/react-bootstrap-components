@@ -4,14 +4,14 @@ import React from 'react'
 *   Container component
 *   children - any component under Container component
 *   variation - type of container e.g. fluid
-*   options - any other class name for container
+*   className - any other class name for container
 */
-const Container = ({ children, variation, options }) => {
-  let className = 'container'
-  if (!!variation) className += `-${variation}`
-  if (!!options) className += ` ${options}`
+const Container = ({ children, variation, className }) => {
+  let classes = 'container'
+  if (!!variation) classes += `-${variation}`
+  if (!!className) classes += ` ${className}`
   return (
-    <div className={ className }>
+    <div className={ classes }>
       {children}
     </div>
   )
