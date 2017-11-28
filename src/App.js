@@ -150,20 +150,20 @@ class App extends Component {
             <Container variation='fluid' className='bg-light'>
               <h2>Row 1</h2>
               <Row>
-                <Col size='md' span='4' className='bg-success'><h3>Col 1 of 3</h3></Col>
-                <Col size='md' span='4' className='bg-warning'><h3>Col 2 of 3</h3></Col>
-                <Col size='md' span='4' className='bg-danger'><h3>Col 3 of 3</h3></Col>
+                <Col span='4' className='bg-success'><h3>Col 1 of 3</h3></Col>
+                <Col span='4' className='bg-warning'><h3>Col 2 of 3</h3></Col>
+                <Col span='4' className='bg-danger'><h3>Col 3 of 3</h3></Col>
               </Row>
 
               <h2>Row 2</h2>
               <Row>
-                <Col size='md' span='6' className='bg-primary'><h3>Col 1 of 2</h3></Col>
-                <Col size='md' span='6' className='bg-secondary'><h3>Col 2 of 2</h3></Col>
+                <Col md='6' className='bg-primary'><h3>Col 1 of 2</h3></Col>
+                <Col md='6' className='bg-secondary'><h3>Col 2 of 2</h3></Col>
               </Row>
 
               <h2>Row 3</h2>
               <Row>
-                <Col size='md' span='12' className='bg-info'><h3>Col 1 of 1</h3></Col>
+                <Col lg='12' className='bg-info'><h3>Col 1 of 1</h3></Col>
               </Row>
             </Container>
           </div>
@@ -173,20 +173,20 @@ class App extends Component {
             <Container className='bg-dark text-light'>
               <h2>Row 1</h2>
               <Row>
-                <Col size='md' span='4' className='bg-success'><h3>Col 1 of 3</h3></Col>
-                <Col size='md' span='4' className='bg-warning'><h3>Col 2 of 3</h3></Col>
-                <Col size='md' span='4' className='bg-danger'><h3>Col 3 of 3</h3></Col>
+                <Col span='4' className='bg-success'><h3>Col 1 of 3</h3></Col>
+                <Col span='4' className='bg-warning'><h3>Col 2 of 3</h3></Col>
+                <Col span='4' className='bg-danger'><h3>Col 3 of 3</h3></Col>
               </Row>
 
               <h2>Row 2</h2>
               <Row>
-                <Col size='md' span='6' className='bg-primary'><h3>Col 1 of 2</h3></Col>
-                <Col size='md' span='6' className='bg-secondary'><h3>Col 2 of 2</h3></Col>
+                <Col md='6' className='bg-primary'><h3>Col 1 of 2</h3></Col>
+                <Col md='6' className='bg-secondary'><h3>Col 2 of 2</h3></Col>
               </Row>
 
               <h2>Row 3</h2>
               <Row>
-                <Col size='md' span='12' className='bg-info'><h3>Col 1 of 1</h3></Col>
+                <Col lg='12' className='bg-info'><h3>Col 1 of 1</h3></Col>
               </Row>
             </Container>
           </div>

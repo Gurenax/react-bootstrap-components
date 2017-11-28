@@ -19,9 +19,9 @@
 - Col
 ```html
 <Col></Col>
-<Col size='md'></Col>
-<Col size='md' span='4'></Col>
-<Col size='md' span='4' className='bg-light'></Col>
+<Col span='4'></Col>
+<Col span='4' sm='4' md='4' lg='4' xl='4'></Col>
+<Col span='4' sm='4' md='4' lg='4' xl='4' className='bg-light'></Col>
 ```
 
 ### Button
