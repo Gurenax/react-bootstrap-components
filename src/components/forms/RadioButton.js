@@ -19,7 +19,7 @@ const RadioButton = ({ id, group, value, description, selected, inline=false, di
   return (
     <div className={className}>
       <label className="form-check-label">
-        <input className="form-check-input" id={ id } name={ group } type="radio" value={value} defaultChecked={ selected } disabled={ disabled } />
+        <input className="form-check-input" id={ id } name={ group } type="radio" value={value} checked={ selected } disabled={ disabled } />
         { description }
       </label>
     </div>

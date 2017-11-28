@@ -17,7 +17,7 @@ const Checkbox = ({ id, description, checked, inline=false, disabled=false }) =>
   return (
     <div className={className}>
       <label className="form-check-label" >
-        <input className="form-check-input" id={ id } name={ id } type="checkbox" defaultChecked={ checked } disabled={ disabled } />
+        <input className="form-check-input" id={ id } name={ id } type="checkbox" checked={ checked } disabled={ disabled } />
         { description }
       </label>
     </div>
