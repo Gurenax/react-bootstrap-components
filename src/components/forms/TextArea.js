@@ -7,7 +7,7 @@ import React from 'react'
 *  placeholder - placeholder description
 */
 const TextArea = ({ id, rows='3', placeholder, value }) => ( 
-  <textarea className="form-control" id={ id } rows={ rows } placeholder={ placeholder }>{ value }</textarea>
+  <textarea className="form-control" id={ id } rows={ rows } placeholder={ placeholder } value={ value } />
 )
 
 export default TextArea
